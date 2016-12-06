@@ -1,0 +1,236 @@
+@bgcolor: f0f8fa; @Fwid: 150px;
+@Fheihgt: 822px; @mudiv: #00a4ac;
+@wd: widht; @hi: height;
+@btm: bottom; @top: top; @cor: color;
+@bg: background; @bgcor: background-color;
+@Fh1:88px; @Fh2: @Fheihgt - 114px; 
+@Fh3:@Fheihgt; @Fh4: 34px;
+.eleRadius(@rd_t, @rd_r, @rd_b, @rd_l){
+  -webkit-border-radius: @arguments;
+  -moz-border-radius: @arguments;
+  border-radius: @arguments;
+}
+.Radius(@rd){
+  -webkit-border-radius: @rd;
+  -moz-border-radius: @rd;
+  border-radius: @rd;
+}
+.boxShaw(@pat){
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.border(@fx){
+  @val: 1px solid #b7d5df;
+  border-@{fx}: @val;
+}
+.tants(@action){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+.tanfs(@action){
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -ms-transform: @arguments;
+  -o-transform: @arguments;
+  transform: @arguments;
+}
+.hovlifunc(){
+	background: url("../img/sj.png") no-repeat right 30px;
+    .boxShaw(0 2px 10px #999);
+    .Radius(5px);
+    .border(@btm);
+    .border(@top);
+    //.tanfs(scale(1.1));
+    @{bgcor}: #e6f6fa;
+}
+.hovlifunc{
+	.hovlifunc();
+}
+body{
+  @{bgcor}: @bgcolor;
+}
+
+.topMenuDivFrame{
+  background:url(../img/topbg.png) repeat-x;
+  height: @Fh1;
+  overflow: hidden;
+  ul.nav{
+  	li{
+  		position: relative;
+  		
+		div.towleverlmenu{				    
+		    position: absolute;
+		    width: 200%;
+		    z-index: 888;
+		    /*border: 1px solid #b7d5df;*/
+		    top: 85px;
+		    display: none;		
+		    /*.boxShaw(0 0 3px #aaa);*/   
+		    overflow: hidden;
+		    .Radius(0 0 5px 5px); 
+		    a{
+		    	text-align: left;
+		    	font-size: 14px;
+		    	line-height: 14px;
+		    	padding: 5px 0;
+		    	cursor: pointer;
+		    	text-indent: 20px;
+		    	height: 20px;
+		    	width: 100%;
+		    	border: 1px solid transparent;
+		    	background: #019592 url(../img/fjt.png) no-repeat 10px 10px;
+		    	color: #e0e0e0;
+		    	&:hover{
+		    		background-color: #23b2a0;
+		    		color: #fff;
+		    		border-@{top}: 1px solid #ffffff;
+		    		border-@{btm}: 1px solid #ffffff;
+		    	}
+		    }		    
+		}
+  	}
+  }
+}
+
+
+.leftMenuDivFrame{
+  width: @Fwid;
+  height: @Fh2;
+  border: 1px solid #b7d5df;
+  overflow: hidden;
+  position: absolute;
+  background-@{cor}: #f0fffd;
+  z-index: 3;    
+  div.minfo{
+  	height: 40px;
+  	width: 100%;
+  	position: relative;
+  	line-height: 40px;
+  	ins{
+  		text-decoration: none;
+  	}
+  }
+  div.gninfo{
+  	background-color: #00817f;
+	span{
+		background: url("../img/leftico.png") no-repeat 0 0;
+	    float: left;
+	    height: 21px;
+	    margin-left: 8px;
+	    margin-right: 8px;
+	    margin-top: 10px;
+	    width: 20px;
+	}
+  }
+  div.textinfo{
+  	font-weight: bold;
+  	background-color: rgb(212, 231, 240);
+  	span{
+  		float: left;
+    	margin: 13px 8px 0 12px;
+  	}
+  }
+  
+  nav.menuarr{
+    width: 100%;
+    height: 25px;
+    display: block;
+    
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;    
+    color: rgb(8, 104, 126);
+    background-@{cor}: #f0fffd;
+    .boxShaw(0 7px 2px #f0fffd);
+    &:hover{
+    	background-@{cor}: #f0fffd;
+    }
+  }
+  nav.muarrowUp{
+    top: 80px; 
+    &:hover{
+    	.border(@btm);
+    }    
+  }
+  nav.muarrowDown{
+    bottom: 0;
+    &:hover{
+    	.border(@top);
+    }
+  }
+  ul{
+    width: @Fwid + 17px;
+    height: @Fh2;
+    overflow: scroll;
+    position: relative;
+    top: 25px;
+    li{
+      height: auto;
+      padding: 10px 20px 5px 10px;
+      text-align: center;
+      cursor: pointer;
+      border-top:1px solid transparent;
+      border-bottom:1px solid transparent;
+      //.tants(all 0.2s ease 0s);      
+      &:hover{
+      	.hovlifunc();
+      }
+      div{
+        width: 40px;
+        @{hi}: 40px;
+        margin: 0 auto;
+        @{bgcor}: #eee;
+        .Radius(10px);
+        .boxShaw(0 0 5px #999);
+      }
+      span{
+        display: block;
+        color: #000;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 2px;
+      }
+    }
+  }
+}
+.indexDivFrame{
+  width: auto;
+  height: @Fh3;
+  left: @Fwid;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+.FooterDivFrame{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: @Fh4;
+  .border(top);
+  color: #98a4a9;
+  line-height: 30px;
+  z-index: 5;
+  span{
+  	background: url("../img/info.png") no-repeat 11px 8px;
+    display: block;
+    float: left;
+    padding-left: 35px;
+  }
+  i{
+  	background: url("../img/fjt.png") no-repeat right center;
+    display: block;
+    float: right;
+    font-style: normal;
+    margin-right: 10px;
+    padding-right: 12px;
+  }
+}
+

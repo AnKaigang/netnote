@@ -94,6 +94,7 @@ public class AdminController {
 						for (Sys_Menu sm3 : list1) {
 							if (sm3.getPid() == sm2.getId()) {
 								// 有三级节点
+								//万一有多级节点呢？
 								sm1.getChildMenu().add(sm2);
 								break;
 							}

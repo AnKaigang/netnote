@@ -1,0 +1,111 @@
+﻿.info_block {
+margin-left:10px;
+width:80%;
+line-height:1.5em;
+color:#454545;
+font-size:12px;
+}
+.info_block .tr_title {
+text-align:right;
+width:90px;
+}
+.info_block .tr_content {
+padding-left:8px;
+width:300px;
+}
+.info_block td {
+border-bottom:1px dotted #CCCCCC;
+line-height:3.2em;
+}
+.info_block .ishome {
+text-align:center;
+}
+.tb_m {
+border:1px solid #CCCCCC;
+height:16px;
+line-height:16px;
+}
+.tb_long
+{
+	width:260px;
+}
+input {
+color:black;
+font-size:14px;
+padding:2px;
+}
+.save_block
+{
+	margin-top:10px;margin-left:108px;
+}
+.save_block .btn_blue
+{
+	margin-left:0;
+}
+.tech_list table td
+{
+	border:none;
+	line-height:2em;
+}
+table.info_block table input
+{
+	margin-right:3px;
+}
+table.info_block .all
+{
+	width:100%;
+}
+.account_into_block
+{
+	width:580px;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+.account_into_block h3
+{
+	font-size:12px;
+	margin-bottom:5px;
+	border-bottom:1px solid #BFD1EB;	
+}
+.account_into_block h3 div
+{	
+	font-size:12px;
+	float:right;
+	font-size:12px;
+	font-weight:normal;
+	padding-right:5px;
+}
+.account_right_info
+{
+	float:right;
+	padding-right:5px;
+}
+.account_title
+{
+	color:#666;
+	padding-left:10px;
+}
+.account_edit_block
+{
+	line-height:2em;
+}
+.account_edit_block input
+{
+	padding:0;
+	font-size:12px;	
+}
+.account_edit_block table td
+{
+	padding-top:3px;
+}
+.account_edit_block input.tb_m
+{
+	height:18px;
+	line-height:18px;
+}
+.account_btn_wrapper
+{
+	padding-left:10px;margin-top:5px;
+}
+
+#main{width:770px;padding-bottom:50px;}
