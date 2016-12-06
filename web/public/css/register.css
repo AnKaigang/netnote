@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  
+  background:url(/netnote/public/img/bg.jpg) top left   ;
+  background-size:100% 100%;
+}
+.container {
+  margin: 80px auto;
+  width: 700px;
+  height:70%;
+ 
+  border: 1;	
+  position:relative;
+  right:23%;
+
+}
+
+.regist {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 450px;
+ 
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  position:relative;
+  right:10px;
+}
+.regist h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 45px;
+  font-weight: bold;
+  color: #997755;
+  text-align: center;
+  text-shadow: 0 1px white;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.regist label.title {
+  font-size: 18px;
+ font-weight:bold;
+ color: #FFFFFF;
+}
+input[type=text], input[type=password],input[type=email] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 250px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+input[type=submit],input[type=button] {
+  padding: 0 18px;
+  height: 33px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #872657;
+  text-shadow: 0 1px #e3f1f1;
+  background: #D2B48C;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background-image: -webkit-linear-gradient(top, #D2B48C, #cde5ef);
+  background-image: -moz-linear-gradient(top, #D2B48C, #cde5ef);
+  background-image: -o-linear-gradient(top, #D2B48C, #cde5ef);
+  background-image: linear-gradient(to bottom, #D2B48C, #cde5ef);
+  -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+  cursor:pointer;
+}
+input[type=submit],input[type=button]:active {
+  background: #cde5ef;
+  border-color: #9eb9c2 #b3c0c8 #b4ccce;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.fileInput{
+	width:75px;
+	height:31px; 
+	background:url(../img/upFileBtn.png) top right;
+	overflow:hidden;
+	position:relative;
+}
+.upfile{
+	position:relative;
+	 display: none;
+	
+}
+.upFileBtn{
+	width:75px;
+	height:31px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer;
+}

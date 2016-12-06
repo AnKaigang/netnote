@@ -1,0 +1,185 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/***
+ * uimaker
+ * http://www.uimaker.com
+ * e-mail: admin@uimaker.com
+ */
+
+a,a:focus{text-decoration:none;color:#000;outline:none;blr:expression(this.onFocus=this.blur());}
+a:hover{color:#00a4ac;text-decoration:none;}
+
+
+
+
+/*page*/
+.pagin{position:relative;margin-top:10px;padding:0 12px;}
+.pagin .blue{color:#056dae;font-style:normal;}
+.pagin .paginList{position:absolute;right:12px;top:0;}
+.pagin .paginList .paginItem{float:left;}
+.pagin .paginList .paginItem a{float:left;width:31px;height:28px;border:1px solid #DDD; text-align:center;line-height:30px;border-left:none;color:#3399d5;}
+.pagin .paginList .paginItem:first-child a{border-left:1px solid #DDD;}
+.pagin .paginList .paginItem:first-child a{border-bottom-left-radius:5px;border-top-left-radius:5px;}
+.pagin .paginList .paginItem:last-child a{border-bottom-right-radius:5px;border-top-right-radius:5px;}
+.pagin .paginList .paginItem.current,.pagin .paginList .paginItem.current a{background:#f5f5f5; cursor:default;color:#737373;}
+.pagin .paginList .paginItem:hover{background:#f5f5f5;}
+.pagin .paginList .paginItem.more,.pagin .paginList .paginItem.more a:hover{ cursor:default;}
+.pagin .paginList .paginItem.more:hover{background:#FFF;}
+.pagin .paginList .paginItem.more a{color:#737373;}
+.pagepre{background:url(../img/pre.gif) no-repeat center center; width:31px; height:28px;}
+.pagenxt{background:url(../img/next.gif) no-repeat center center; width:31px; height:28px;}
+
+
+
+
+/*-----------------2-1修改样式式样-----------------------*/
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+select{
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  
+  
+  
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 15px;
+  
+  
+  
+	border:1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+	height: 28px;
+    line-height:30px;
+    text-align:left;
+    padding-left:10px;
+    background:url(../img/down.gif) no-repeat right center;
+}
+.pagin .select1{width:100px;height:30px;line-height:30px;text-align:left;padding-left:10px;background:url(../img/down.gif) no-repeat center right;}
+
+
+/*-----------------2-2修改样式---------------------------------*/
+
+
+.tablelist2 th{font-weight:400;}
+.tablelist2 td input{margin:0 auto;line-height:35px;}
+
+.tablelist2{border:solid 1px #cbcbcb; width:100%; clear:both;}
+.tablelist2 th{background:url(../img/th.gif) repeat-x; height:34px; line-height:34px; border-bottom:solid 1px #b6cad2; text-indent:11px; text-align:center;}
+.tablelist2 td{width:100px;line-height:35px; text-indent:11px; border-right: dotted 1px #c7c7c7;text-align:center;}
+.tablelink2{color:#056dae;}
+.tablelist2 tbody tr.odd{background:#f5f8fa;}
+.tablelist2 tbody tr:hover{background:#e5ebee;}
+
+.HuiTab .on{display:block;}
+
+.btn-save{         
+	border-radius: 4px;
+    overflow: hidden;      
+	font-size: 14px;
+    height: 31px;
+	padding: 4px 12px; 
+	color: #FFF;
+    background-color: #5A98DE;
+    border-color: #5A98DE;    
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #DDD;
+    color: #FFF;
+    background-color: #5A98DE;
+    border-color: #5A98DE;
+    width: auto;
+    transition: background-color 0.1s linear 0s;
+}
+.btn-back{    
+	background-color: #E6E6E6;
+    border-color: #E6E6E6;    
+	border-radius: 4px;
+    overflow: hidden;      
+	font-size: 14px;
+    height: 31px;
+	padding: 4px 12px; 
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #DDD;
+    color: #333;
+    width: auto;
+    transition: background-color 0.1s linear 0s;
+}
+.select1{    
+	width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    background: transparent url("../img/down.gif") no-repeat scroll right center;
+    
+}
+.shq-btn-close{
+	width: 30px; height: 30px; display: none; position: absolute ;right: 20px; top: 15px;
+	font-size: 30px; line-height: 26px; cursor:pointer;z-index:5;
+}
+.shq-btn-close:hover,
+.shqsubmitBtn:hover{
+	color:#086B86;text-decoration:none;
+}
+.shqsubmitBtn{
+	width: 30px; height: 30px; display: none; position: absolute ;right: 80px; top: 15px;
+	font-size: 30px; line-height: 26px; cursor:pointer;z-index:5;
+}
+.shq-mask {
+    background: #F0F9FD none repeat scroll 0 0;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    top:50%;   
+    left:0;
+    display:block;
+    overflow:hidden; 
+    z-index:2;
+}
+.shq-mask-frame{
+	width: 200%; height: 100%; overflow: auto;
+}
+.onelevel-text{
+	font-size:18px; color: #000; font-family:'arial';
+}
+.towlevel-text{
+	color: #076B89;
+}
+.shq-frame-ol li{
+	border-bottom: 1px dashed #ccc;line-height:26px;color: #444;
+}
+.shq-frame-ol li div{
+	border-top: 1px dashed #ccc;line-height:26px;color: #444;
+}
+.shq-frame-ul{
+	padding: 30px 0 0 30px; 
+}
+.shq-frame-li{
+	display: inline-block;border:1px solid #ccc;
+	width: 150px;overflow: hidden;margin-right: 50px;
+	 padding: 20px
+}
+.shq-frame-li label input{
+	 margin-right: 8px;
+    vertical-align: sub;   
+    cursor: pointer;
+}
+.shq-div-secondlevel,
+.shq-frame-ol li div{
+	margin-left: 20px; 
+}
