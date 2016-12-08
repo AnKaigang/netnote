@@ -8,7 +8,7 @@ pageEncoding="UTF-8" isELIgnored="false"%>
 <html lang="zh-cn"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>日记云，您身边的日记专家</title>   
+    <title>日记云，您身边的日记专家,就是这么6</title>
 	<link rel="shortcut icon" href="地质处图标" type="image/x-icon">
     <link rel="Stylesheet" type="text/css" href="public/css/aggsite.css">
          <link rel="Stylesheet" type="text/css" href="public/css/style.css">
