@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea
+web/WEB-INF/class
+web/WEB-INF/lib
+test.iml
+out
